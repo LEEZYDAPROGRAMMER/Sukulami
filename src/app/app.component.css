@@ -1,0 +1,34 @@
+.mycard {
+    background-color:DodgerBlue;
+   color:#fff;
+   font-family: Helvetica;
+  }
+  .mycardMenu {
+    background-color:DodgerBlue;
+   color:#fff;
+   font-family: Helvetica;
+   right:-1800px;
+   
+  
+  }
+  .headerImage {
+    background-image: url('C:\Users\CodeTribe\fede\src\assets\img\clock.png');
+    background-size: cover;
+
+    width: 45px;
+    height: 45px;
+  }
+.manDiv
+{
+    background-color:#fff;
+    color:DodgerBlue;
+   font-family: Helvetica;
+
+}
+.butt
+{
+   
+    color:DodgerBlue;
+    font-family: Helvetica;
+
+}

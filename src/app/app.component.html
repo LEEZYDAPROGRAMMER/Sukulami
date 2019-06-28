@@ -1,0 +1,38 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<mat-card class="mycard">
+    <mat-card-header>
+      <div mat-card-avatar class="headerImage"></div>
+      <mat-card-title> {{title}}</mat-card-title>
+      
+    </mat-card-header>
+    <div >
+
+        <button class="mycardMenu" mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+            <mat-icon>more_horizontal</mat-icon>
+          </button>
+        <!--The content below is only a placeholder and can be replaced.-->
+          <mat-menu class="mycardMenu" #menu="matMenu">
+        
+            <!--about-->
+            <button class="butt" routerLink="/view" mat-menu-item>
+              <mat-icon  color="warn">local_library</mat-icon>
+              <span class="butt"> View </span>
+            </button>
+        
+            <!--products-->
+            <button class="butt" routerLink="/register" mat-menu-item > 
+              <mat-icon  color="warn">add</mat-icon>
+              <span class="butt">Create</span>
+            </button>
+       
+          </mat-menu>
+        
+         </div>
+
+  </mat-card>
+
+
+ 
+
+  
+<router-outlet></router-outlet>

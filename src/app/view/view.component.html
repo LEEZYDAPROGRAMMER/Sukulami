@@ -1,0 +1,33 @@
+<mat-card >
+
+    <mat-card-title >  
+      {{ title }}
+    </mat-card-title>
+    
+    <mat-list class="manDiv" *ngFor="let todos of taskss">
+          {{ todos.name }}
+         {{ todos.time }}  
+         <br/><mat-form-field class="manDiv"><input [(ngModel)]="editedName"  matInput placeholder="name" ></mat-form-field> <br/>
+          <mat-form-field class="manDiv"> <input [(ngModel)]="editedTime" matInput placeholder="time"></mat-form-field>
+          
+          <button class="butt" mat-button (click)="edit(todos,editedName,editedTime)"> <mat-icon aria-hidden="false" aria-label="edit">edit</mat-icon></button>
+          <button class="butt" mat-button (click)="delete(todos)"> <mat-icon aria-hidden="false" aria-label="delete" >delete</mat-icon> </button>
+       </mat-list>
+    
+       <br/>
+    <div *ngIf="empty">
+    
+      
+          your values is empty
+     
+    </div>
+     
+           
+      <form>
+     
+     </form>
+     
+    
+    
+    
+    </mat-card>
